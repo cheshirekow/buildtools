@@ -18,7 +18,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 package build
 
 import (
-	"github.com/bazelbuild/buildtools/tables"
+	"github.com/cheshirekow/buildtools/tables"
 	"path"
 	"path/filepath"
 	"regexp"

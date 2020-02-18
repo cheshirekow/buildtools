@@ -17,8 +17,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/convertast"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/convertast"
 	"go.starlark.net/syntax"
 )
 

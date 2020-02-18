@@ -30,11 +30,11 @@ import (
 	"path"
 	"strings"
 
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/config"
-	depspb "github.com/bazelbuild/buildtools/deps_proto"
-	"github.com/bazelbuild/buildtools/edit"
-	eapb "github.com/bazelbuild/buildtools/extra_actions_base_proto"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/config"
+	depspb "github.com/cheshirekow/buildtools/deps_proto"
+	"github.com/cheshirekow/buildtools/edit"
+	eapb "github.com/cheshirekow/buildtools/extra_actions_base_proto"
 	"github.com/golang/protobuf/proto"
 )
 

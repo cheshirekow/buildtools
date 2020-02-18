@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/bzlenv"
-	"github.com/bazelbuild/buildtools/edit"
-	"github.com/bazelbuild/buildtools/tables"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/bzlenv"
+	"github.com/cheshirekow/buildtools/edit"
+	"github.com/cheshirekow/buildtools/tables"
 )
 
 // Bazel API-specific warnings

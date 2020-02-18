@@ -3,7 +3,7 @@
 package warn
 
 import (
-	"github.com/bazelbuild/buildtools/build"
+	"github.com/cheshirekow/buildtools/build"
 )
 
 func dictionaryConcatenationWarning(f *build.File) []*LinterFinding {

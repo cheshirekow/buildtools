@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bazelbuild/buildtools/build"
+	"github.com/cheshirekow/buildtools/build"
 )
 
 func TestMovePackageDeclarationToTheTop(t *testing.T) {

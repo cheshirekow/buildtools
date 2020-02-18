@@ -26,11 +26,11 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/buildifier/utils"
-	"github.com/bazelbuild/buildtools/differ"
-	"github.com/bazelbuild/buildtools/tables"
-	"github.com/bazelbuild/buildtools/warn"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/buildifier/utils"
+	"github.com/cheshirekow/buildtools/differ"
+	"github.com/cheshirekow/buildtools/tables"
+	"github.com/cheshirekow/buildtools/warn"
 )
 
 var buildVersion = "redacted"
@@ -52,6 +52,7 @@ var (
 	addTablesPath = flag.String("add_tables", "", "path to JSON file with custom table definitions which will be merged with the built-in tables")
 	version       = flag.Bool("version", false, "Print the version of buildifier")
 	inputType     = flag.String("type", "auto", "Input file type: build (for BUILD files), bzl (for .bzl files), workspace (for WORKSPACE files), default (for generic Starlark files) or auto (default, based on the filename)")
+	indent        = flag.Int("indent", 2, "number of spaces to use for indent")
 
 	// Debug flags passed through to rewrite.go
 	allowSort = stringList("allowsort", "additional sort contexts to treat as safe")
@@ -128,9 +129,15 @@ func main() {
 		os.Exit(0)
 	}
 
+	if *indent < 0 {
+		fmt.Fprintf(os.Stderr, "-indent must be >= 0\n")
+		os.Exit(2)
+	}
+
 	// Pass down debug flags into build package
 	build.DisableRewrites = disable()
 	build.AllowSort = allowSort()
+	build.SetIndentation(*indent)
 
 	if err := utils.ValidateInputType(inputType); err != nil {
 		fmt.Fprintf(os.Stderr, "buildifier: %s\n", err)

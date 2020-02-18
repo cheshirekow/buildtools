@@ -7,8 +7,8 @@ import (
 	"os"
 	"sort"
 
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/edit"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/edit"
 )
 
 // LintMode is an enum representing a linter mode. Can be either "warn", "fix", or "suggest"
@@ -61,7 +61,7 @@ type Replacement struct {
 }
 
 func docURL(cat string) string {
-	return "https://github.com/bazelbuild/buildtools/blob/master/WARNINGS.md#" + cat
+	return "https://github.com/cheshirekow/buildtools/blob/master/WARNINGS.md#" + cat
 }
 
 // makeFinding creates a Finding object

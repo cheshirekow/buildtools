@@ -20,9 +20,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/edit"
-	"github.com/bazelbuild/buildtools/tables"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/edit"
+	"github.com/cheshirekow/buildtools/tables"
 )
 
 var (

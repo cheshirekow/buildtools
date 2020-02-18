@@ -2,7 +2,7 @@ package warn
 
 import (
 	"fmt"
-	"github.com/bazelbuild/buildtools/tables"
+	"github.com/cheshirekow/buildtools/tables"
 	"testing"
 )
 

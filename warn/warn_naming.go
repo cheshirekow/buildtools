@@ -2,8 +2,8 @@ package warn
 
 import (
 	"fmt"
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/bzlenv"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/bzlenv"
 	"strings"
 )
 

@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bazelbuild/buildtools/build"
+	"github.com/cheshirekow/buildtools/build"
 )
 
 var parseLabelTests = []struct {

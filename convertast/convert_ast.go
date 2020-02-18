@@ -1,6 +1,6 @@
 // This file contains functions to convert from one AST to the other.
 // Input: AST from go.starlark.net/syntax
-// Output: AST from github.com/bazelbuild/buildtools/build
+// Output: AST from github.com/cheshirekow/buildtools/build
 
 package convertast
 
@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bazelbuild/buildtools/build"
+	"github.com/cheshirekow/buildtools/build"
 	"go.starlark.net/syntax"
 )
 

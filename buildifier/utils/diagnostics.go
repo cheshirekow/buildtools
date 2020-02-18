@@ -3,8 +3,8 @@ package utils
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/warn"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/warn"
 	"sort"
 	"strings"
 )

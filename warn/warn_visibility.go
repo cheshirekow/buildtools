@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/bazelbuild/buildtools/build"
+	"github.com/cheshirekow/buildtools/build"
 )
 
 var internalDirectory = regexp.MustCompile("/(internal|private)[/:]")

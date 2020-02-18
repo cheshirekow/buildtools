@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/warn"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/warn"
 )
 
 func isStarlarkFile(name string) bool {

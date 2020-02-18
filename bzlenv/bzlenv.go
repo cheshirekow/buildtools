@@ -2,7 +2,7 @@
 package bzlenv
 
 import (
-	"github.com/bazelbuild/buildtools/build"
+	"github.com/cheshirekow/buildtools/build"
 )
 
 // ValueKind describes how a binding was declared.

@@ -1,8 +1,8 @@
 package warn
 
 import (
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/bzlenv"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/bzlenv"
 )
 
 // Type describes an expression type in Starlark.

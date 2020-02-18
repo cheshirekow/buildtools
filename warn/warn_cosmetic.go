@@ -7,8 +7,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/bazelbuild/buildtools/build"
-	"github.com/bazelbuild/buildtools/edit"
+	"github.com/cheshirekow/buildtools/build"
+	"github.com/cheshirekow/buildtools/edit"
 )
 
 func sameOriginLoadWarning(f *build.File) []*LinterFinding {

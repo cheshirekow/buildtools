@@ -23,11 +23,18 @@ import (
 	"strings"
 )
 
-const (
+
+var (
 	nestedIndentation = 4 // Indentation of nested blocks
 	listIndentation   = 4 // Indentation of multiline expressions
 	defIndentation    = 8 // Indentation of multiline function definitions
 )
+
+func SetIndentation(indent int) {
+	nestedIndentation = indent
+	listIndentation = indent
+	defIndentation = 2 * indent
+}
 
 // Format returns the formatted form of the given BUILD or bzl file.
 func Format(f *File) []byte {
